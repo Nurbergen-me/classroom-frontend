@@ -51,6 +51,8 @@ function MobileHeader() {
 
   const { title } = useRefineOptions();
 
+  title.text = "Classroom";
+
   return (
     <header
       className={cn(
