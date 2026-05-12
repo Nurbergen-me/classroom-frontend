@@ -6,3 +6,13 @@ export type Subject = {
     department: string;
     createdAt?: string;
 }
+
+export type ListResponse<T = unknown> = {
+    data?: T[];
+    pagination?: {
+        total: number;
+        page: number;
+        limit: number;
+        totalPages: number;
+    }
+}
